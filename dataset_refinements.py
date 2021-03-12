@@ -15,7 +15,6 @@ def create_images_paths(dataset_path: str, file_name):
 
 
 def create_labels(file_name: str, ds_file_name: str, is_er = False):
-    # TODO de gatat pe lumina, regresie si clasificare in acelasi fisier
     f = open(file_name, 'r')
     ds = open(ds_file_name, 'w')
     try:
@@ -45,10 +44,5 @@ def create_labels(file_name: str, ds_file_name: str, is_er = False):
         
 
 
-# create_images_paths(DATASET_PATH + 'ER\\', 'ER_files.txt')
-# create_images_paths(DATASET_PATH + 'NR\\', 'NR_files.txt')
-
-create_labels('ER_files.txt', 'ER_dataset.txt', is_er=True)
-create_labels('NR_files.txt', 'NR_dataset.txt')
 
 
